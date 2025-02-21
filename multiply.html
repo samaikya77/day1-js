@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>enter 1st number</label>
+    <input type="number" id="number1"/>
+    <label>enter 2nd number</label>
+    <input type="number" id="number2"/>
+    <button onclick="multiply()">multiply nums</button>
+    <p id="result"></p>
+    <script>
+        function multiply(){
+        var num1=document.getElementById('number1').value;
+        var num2=document.getElementById('number2').value;
+        var multiples=num1*num2;
+        var result=document.getElementById('result');
+        result.innerText=multiples;
+        }
+    </script>
+</body>
+</html>

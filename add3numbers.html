@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>enter 1st value</label>
+    <input type="number" id="value1"/>
+    <label>enter 2nd value</label>
+    <input type="number" id="value2"/>
+    <label>enter 3rd value</label>
+    <input type="number" id="value3"/>
+    <button onclick="add3sum()">add</button>
+    <p id="sumof3"></p>
+    <script>
+        function add3sum(){
+            var num1=document.getElementById('value1').value-0;
+            var num2=document.getElementById('value2').value-0;
+            var num3=document.getElementById('value3').value-0;
+            var result=num1+num2+num3;
+            var createnewElement=document.createElement('h2')
+            var sum=document.getElementById('sumof3');
+            createnewElement.innerText=result;
+            sum.append(createnewElement);
+
+
+        }
+    </script>
+</body>
+</html>

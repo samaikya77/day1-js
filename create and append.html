@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="createEl()">create element</button>
+    <div id="parent"></div>
+    <script>
+        function createEl(){
+            var parenttext=document.getElementById('parent');
+            var newElement=document.createElement('p');
+            newElement.innerText='i am samaikya';
+            parenttext.append(newElement);
+
+        }
+    </script>
+</body>
+</html>
