@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="myImage" src="Day2/images/old image .png" alt="old image" width="200">
+    <button id="but" onclick="changeattributes()">Chnange</button>
+    <script>
+        function changeattributes(){
+        var image=document.getElementById("myImage");
+        image.setAttribute("src","Day2/images/new image.png")
+        image.setAttribute("alt","new image");
+        var button=document.getElementById("but");
+        button.innerText="button changed";
+        button.removeAttribute("disabled",true);
+        }
+    </script>
+</body>
+</html>

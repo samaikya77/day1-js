@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>I am paragraph.</p>
+    <p id="p1">I am paragraph2.</p>
+    <script>
+        var para=document.getElementById("p1");
+        var newEl=document.createElement("h1");
+        newEl.innerText="h1 is created an replaced by p1";
+        para.replaceWith(newEl);
+
+    </script>
+</body>
+</html>

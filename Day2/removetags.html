@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <p id="p1">para1</p>
+        <button onclick="removetags()">change</button>
+        
+        <script>
+            function removetags(){
+            var parent=document.body
+            var child=document.getElementById("p1");
+            if(child){
+            parent.removeChild(child);
+            }
+        }
+            
+        </script>
+    </div>
+</body>
+</html>
